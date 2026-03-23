@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(92, 179, 201);
+}
+
+#Titulo1{
+ color:rgb(36, 80, 80);
+}
+
+#Titulo2{
+ color:rgb(58, 100, 126);
+}
+
+.fundoAzul {
+    color:skyblue;
+}
+
+input {
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+label {
+    display:block;
+    margin-bottom:8px;
+}
