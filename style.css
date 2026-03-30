@@ -14,15 +14,20 @@ body{
 
 
 #Titulo1{
- color:rgb(36, 80, 80);
+    font-family: Bradley Hand, cursive;
+    color:rgb(36, 80, 80);
 }
 
 #Titulo2{
- color:rgb(58, 100, 126);
+    font-family: Trattatello, fantasy;
+    color:rgb(58, 100, 126);
 }
 
-.fundoAzul {
-    color:skyblue;
+.fundoazul {
+    justify-content: center;
+    display: flex;
+    font-family: Snell Roundhand, cursive;
+    color:rgb(35, 67, 80);
 }
 
 input {
