@@ -3,11 +3,13 @@ body{
 }
 
 .container{
+    margin: 50px auto;
     background-color: aliceblue;
     border-radius: 20px;
     padding:10px;
-    width:auto;
-
+    width:600px;
+    justify-content: center;
+    display: flex;
 }
 
 
