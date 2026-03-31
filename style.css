@@ -3,6 +3,7 @@ body{
 }
 
 .container{
+    border: 2px dotted #364e91;
     margin: 50px auto;
     background-color: aliceblue;
     border-radius: 20px;
@@ -14,11 +15,17 @@ body{
 
 
 #Titulo1{
+    justify-content: center;
+    display: flex;
     font-family: Bradley Hand, cursive;
     color:rgb(36, 80, 80);
 }
 
 #Titulo2{
+    font-size: 25px;
+    letter-spacing: 5%;
+    justify-content: center;
+    display: flex;
     font-family: Trattatello, fantasy;
     color:rgb(58, 100, 126);
 }
