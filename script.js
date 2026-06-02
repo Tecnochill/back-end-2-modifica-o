@@ -8,4 +8,14 @@ if (AreaTotal > 10 ){
 document.getElementById("formulario").addEventListener("submit",function(event){
 
 event.presentDefault();
+
+    if(nome===""){
+        alert("preencha o primeiro nome");
+        return;
+    }
+
+    if(sobrenome===""){
+        alert("preencha seu sobrenome");
+        return;    
+    }
 });
