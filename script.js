@@ -7,5 +7,5 @@ if (AreaTotal > 10 ){
 
 document.getElementById("formulario").addEventListener("submit",function(event){
 
-
+event.presentDefault();
 });
