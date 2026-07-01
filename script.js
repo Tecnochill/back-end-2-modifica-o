@@ -33,17 +33,6 @@ document.getElementById("formulario").addEventListener("submit", function(event)
         return;
     }
 
-    let usuario ={
-        nome: nome,
-        sobrenome: sobrenome,
-        date: date,
-        email: email,
-        tel: tel
-    };
-
-    console.log("dados do formulário");
-    console.log(usuario);
-
     alert("Formulário enviado com secesso!");
     this.submit();
 
