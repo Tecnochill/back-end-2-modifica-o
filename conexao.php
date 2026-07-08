@@ -1,15 +1,15 @@
 <?php
 
-$servidor= "localhost";
-$usuario= "root";
-$senha="";
-$banco= "escola";
-
-$conexao= new mysqli($servidor, $usuario, $senha, $banco);
+$servidor = "localhost";
+$usuario = "root";
+$senha = "";
 
 
-if($conexao ->connect_error){
-    die("Erro de conexão" . $conexao->correct_error);
+$conexao = new mysqli($servidor, $usuario, $senha);
+
+
+if($conexao->connect_error) {
+    die("Erro de conexão: " . $conexao->correct_error);
 }
 
 $conexao->query("CREATE DATABASE IF NOT EXISTS cadastro_alunos" );
@@ -22,5 +22,7 @@ $sql ="CREATE TABLE IF NOT EXISTS usuarios(
     date DATE NOT NULL,
     email VARCHAR(100) NOT NULL,
     tel VARCHAR(50) NOT NULL
-)" 
+)" ;
+
+$conexao->query($sql);
 ?>
