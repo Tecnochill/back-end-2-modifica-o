@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="jxcript.js"></script>
+    <script src="script.js"></script>
 
     <title>Document</title>
 </head>
@@ -21,7 +21,7 @@
     <h1 class="container">HTML Formulário</h1>
 
     <div class="container">
-        <form id="formulario" action="save.php" method="post.">
+        <form id="formulario" action="save.php" method="POST">
 
             <div class="estilo-caixa">
                 <label>primeiro nome </label>
@@ -33,7 +33,7 @@
             </div>
             <div class="estilo-caixa">
                 <label>data de nascimento </label>
-                <input type="number" id="data" name="data">
+                <input type="date" id="data" name="data">
             </div>
             <div class="estilo-caixa">
                 <label>email </label>
@@ -41,7 +41,7 @@
             </div>
             <div class="estilo-caixa">
                 <label>numero de telefone</label>
-                <input type="number" id="tel" name="telefone" placeholder="Digite seu telefone">
+                <input type="tel" id="tel" name="telefone" placeholder="Digite seu telefone">
             </div>
             <div>
                 <button type="submit">Enviar</button>
