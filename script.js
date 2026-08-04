@@ -33,7 +33,22 @@ document.getElementById("formulario").addEventListener("submit", function(event)
         return;
     }
 
-    alert("Formulário enviado com secesso!");
-    this.submit();
+    let formData = new FormData(this);
 
+    fetch("save.php",{
+        method: "POST", 
+        body: formData
+    })
+
+    .then(response => response.text())
+    .then(data => {
+
+        alert("Formulário enviado com sucesso!");
+
+        document.body.innerHTML ="";
+    })
+    .catch(error => {
+        alert("Erro ao enviar os dados.");
+        console.error("Erro:", error);
+    });
 });
