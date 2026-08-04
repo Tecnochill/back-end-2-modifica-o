@@ -10,8 +10,7 @@ $resultado = $conexao->query($sql);
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-         
+        <meta charset="UTF-8"> 
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -20,7 +19,7 @@ $resultado = $conexao->query($sql);
 
             .container {
                 width: 900px;
-                margin: 400px auto;
+                margin: 40px auto;
                 background: #fff;
                 padding: 30px;
                 border-radius: 10px
@@ -46,5 +45,26 @@ $resultado = $conexao->query($sql);
                 padding:10px;
                 border: 1px;
             }
-            </style>
-    </html>
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Usuários cadastrados</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Data</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php while($row = $resultado->fetch_assoc()): ?>
+                        <tr>
+                            <td><?
+    </body>
+</html>
