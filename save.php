@@ -4,8 +4,8 @@ include("conexao.php");
 $nome = $_POST["nome"];
 $sobrenome = $_POST["sobrenome"];
 $date = $_POST["date"];
-$tel = $_POST["email"];
-$email = $_POST["tel"];
+$tel = $_POST["tel"];
+$email = $_POST["email"];
 
 
 $stmt =$conexao->prepare(
