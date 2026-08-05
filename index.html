@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
     <title>Document</title>
 </head>
@@ -17,11 +16,10 @@
     <br>
     <p class="fundoazul">Aluna do Segundo ano Desenvolvimento de sistemas</p>
     <i class="fundoazul">tubarões</i>
-
     <h1 class="container">HTML Formulário</h1>
 
     <div class="container">
-        <form id="formulario" action="save.php" method="POST">
+        <form id="formulario" action="salvar.php" method="POST">
 
             <div class="estilo-caixa">
                 <label>primeiro nome </label>
@@ -33,7 +31,7 @@
             </div>
             <div class="estilo-caixa">
                 <label>data de nascimento </label>
-                <input type="date" id="data" name="data">
+                <input type="date" id="date" name="date">
             </div>
             <div class="estilo-caixa">
                 <label>email </label>
@@ -44,12 +42,14 @@
                 <input type="tel" id="tel" name="telefone" placeholder="Digite seu telefone">
             </div>
             <div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Apagar</button>
+                <button type="submit" class="botoes">Enviar</button>
+                <button type="reset" class="botoes">Apagar</button>
             </div>
 
         </form>
     </div>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
