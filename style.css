@@ -47,3 +47,9 @@ label {
     display:block;
     margin-bottom:8px;
 }
+
+.estilo-caixa {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
