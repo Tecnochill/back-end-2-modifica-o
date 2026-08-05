@@ -3,7 +3,7 @@ include("conexao.php");
 
 $nome = $_POST["nome"];
 $sobrenome = $_POST["sobrenome"];
-$date = $_POST["date"];
+$date = $_POST["date"]; 
 $tel = $_POST["tel"];
 $email = $_POST["email"];
 
@@ -11,7 +11,7 @@ $email = $_POST["email"];
 $stmt =$conexao->prepare(
 
     "INSERT INTO usuarios
-    (nome, sobrenome, date, email, tel)
+    (nome, sobrenome, data, email, tel)
 
     VALUES (?, ?, ?, ?, ?)"
 );
@@ -30,7 +30,7 @@ $stmt->bind_param(
 if ($stmt->execute()) {
     echo "dados cadastrados com sucesso";
 }else{
-    echo "erro no cadastro";
+    echo "erro no cadastro: " . $stmt->error;
 }
 $stmt->close();
 $conexao->close();
